@@ -25,6 +25,8 @@ export default function Card() {
     function loadInvitation(invitation: Invitation) {
         const guestId = getGuest();
 
+        document.title = invitation.name;
+
         const currentGuest = invitation.guests.find(guest => guest.id === guestId);
 
         $name.textContent = invitation.name;
