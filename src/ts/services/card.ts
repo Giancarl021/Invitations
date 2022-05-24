@@ -17,11 +17,9 @@ export default function Card() {
     const $deny = document.querySelector('#deny') as HTMLButtonElement;
 
     function getGuest() {
-        return window
-            .location
-            .pathname
-            .split('/')
-            .pop();
+        const query = new URLSearchParams(window.location.search);
+
+        return query.get('g');
     }
 
     function loadInvitation(invitation: Invitation) {
