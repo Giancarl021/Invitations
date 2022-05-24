@@ -5,9 +5,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "predeploy": "node scripts/pre-deploy.js",
+    "deploy": "gh-pages -d dist",
+    "postdeploy": "node scripts/post-deploy.js",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "typescript": "^4.5.4",
     "vite": "^2.9.9"
   },
