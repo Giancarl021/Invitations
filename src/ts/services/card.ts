@@ -63,7 +63,7 @@ export default function Card() {
             window.open(currentGuest?.overwrite?.deny?.link ?? invitation.deny.link, '_blank');
         });
 
-        const details = Object.entries(invitation.details).map(([key, value]) => ({ key, value }));
+        const details = Object.entries(invitation.details ?? {}).map(([key, value]) => ({ key, value }));
 
         $details.innerHTML = Array.from({ length: details.length }).fill(`
             <div class="detail">

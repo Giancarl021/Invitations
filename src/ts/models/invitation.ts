@@ -28,6 +28,6 @@ export default interface Invitation {
     words?: InvitationWords;
     accept: InvitationDestination;
     deny: InvitationDestination;
-    details: InvitationDetails;
+    details?: InvitationDetails;
     guests?: InvitationGuest[];
 }

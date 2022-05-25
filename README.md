@@ -40,7 +40,7 @@ The invitation file follows this schema:
         "text": "string", // The text of the button
         "link": "string" // The URL that the button will redirect to
     },
-    "details": { // Details of the event such as date and address
+    "details": { // [OPTIONAL] Details of the event such as date and address
         "detail1": "string", // Text-only detail
         "detail2": { // Link-based detail
             "text": "string", // The text of the detail
