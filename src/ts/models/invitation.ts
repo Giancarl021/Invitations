@@ -29,5 +29,5 @@ export default interface Invitation {
     accept: InvitationDestination;
     deny: InvitationDestination;
     details: InvitationDetails;
-    guests: InvitationGuest[];
+    guests?: InvitationGuest[];
 }

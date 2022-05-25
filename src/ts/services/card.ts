@@ -28,7 +28,7 @@ export default function Card() {
         document.title = invitation.name;
         document.querySelector('html')!.lang = invitation.lang ?? 'en';
 
-        const currentGuest = invitation.guests.find(guest => guest.id === guestId);
+        const currentGuest = invitation.guests?.find(guest => guest.id === guestId);
 
         $name.textContent = invitation.name;
         $message.textContent = currentGuest?.overwrite?.message ?? invitation.message;
