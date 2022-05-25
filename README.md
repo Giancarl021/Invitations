@@ -29,8 +29,8 @@ The invitation file follows this schema:
     "message": "string", // The message to display on the invitation
     "host": "string", // The name of the host
     "words": { // [OPTIONAL] Translated words
-        "from": "string", // The word "from" in the target language
-        "to": "string" // The word "to" in the target language
+        "from": "string", // [OPTIONAL] The word "from" in the target language
+        "to": "string" // [OPTIONAL] The word "to" in the target language
     },
     "accept": { // Accept button properties
         "text": "string", // The text of the button
