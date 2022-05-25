@@ -26,6 +26,7 @@ export default function Card() {
         const guestId = getGuest();
 
         document.title = invitation.name;
+        document.querySelector('html')!.lang = invitation.lang ?? 'en';
 
         const currentGuest = invitation.guests.find(guest => guest.id === guestId);
 

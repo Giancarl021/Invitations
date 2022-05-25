@@ -22,6 +22,7 @@ export interface InvitationGuest {
 
 export default interface Invitation {
     name: string;
+    lang?: string;
     message: string;
     host: string;
     words?: InvitationWords;
